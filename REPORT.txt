@@ -1,0 +1,53 @@
+# Informe de actividad: creación de lista de tareas en GitHub en Python
+
+Integrantes:
+- Leonardo Alfonso Barraza Cantillo
+- Jeremy Fontalvo 
+- Juan Felipe Noguera Acendra
+
+Introducción:
+En esta actividad desarrollamos de forma colaborativa una aplicación de lista de tareas (ToDoApp) utilizando Git y GitHub como herramientas principales de control de versiones. El objetivo fue poner en práctica el trabajo en equipo en un entorno de desarrollo real, aplicando buenas prácticas de ramificación, fusión y resolución de conflictos. Esta experiencia nos permitió afianzar conocimientos técnicos y mejorar la coordinación entre los miembros del grupo.
+
+1. Pasos realizados:
+- Creamos el repositorio ToDoApp-Grupo1 en GitHub.
+- Cada integrante creó su rama individual (LeonardoB, JeremyF, JuanN).
+- Se desarrollaron las funcionalidades asignadas y se resolvieron conflictos.
+- Se creó la rama grupo-1 para integrar los cambios.
+- Se fusionaron las ramas individuales en la rama de grupo y luego con main mediante Pull Request.
+
+2. Comandos Git:
+- git clone <URL> → Clonar el repositorio.
+- git checkout -b <rama> → Crear y cambiar a una nueva rama.
+- git add <archivo> → Añadir cambios al área de preparación.
+- git commit -m "<mensaje>" → Confirmar cambios.
+- git push origin <rama> → Enviar cambios a GitHub.
+- git merge <rama> → Fusionar cambios de otra rama.
+- git push origin --delete <rama> → Eliminar ramas en remoto.
+
+3. Conflictos:
+- Se presentó un conflicto en task_model.py entre is_completed/mark_as_complete y is_done/set_done.
+- Solución: Combinamos los métodos y atributos, manteniendo is_completed como referencia principal.
+
+4. Contribuciones:
+- Leonardo Barraza: Añadió la funcionalidad mark_as_complete y actualizó main.py.
+- Jeremy Fontalvo: Añadió la funcionalidad delete_task y actualizó README.md.
+- Juan Noguera: Simuló cambios conflictivos con set_done y remove_task y participó en la resolución de conflictos.
+
+5. Reflexiones:
+- La experiencia nos ayudó a entender mejor la herramienta Git y su uso en trabajo colaborativo.
+- Aprendimos la importancia de coordinar tareas para evitar conflictos innecesarios.
+- Detectamos que los Pull Requests son clave para revisar cambios antes de fusionar.
+- Como complicación, tuvimos problemas con algunos commits, lo que retrasó un poco la integración.
+
+6. Preguntas de reflexión:
+- ¿Cómo coordinaron el trabajo en equipo para evitar conflictos innecesarios?
+  Asignamos tareas específicas a cada integrante, trabajando en ramas separadas y comunicándonos constantemente para evitar modificaciones sobre los mismos archivos, a través de reuniones sincrónicas virtuales.
+- ¿Qué aprendieron sobre la resolución de conflictos en Git?
+  Que es fundamental revisar cuidadosamente los cambios de ambas partes, comprender su propósito y combinarlos de forma que se mantenga la funcionalidad de todos los aportes.
+- ¿Por qué es importante usar Pull Requests en proyectos colaborativos?
+  Porque permiten una revisión previa, mejoran la calidad del código, fomentan la discusión técnica y reducen errores antes de fusionar en la rama principal.
+- ¿Cómo podría mejorarse el flujo de trabajo con herramientas como CI/CD?
+  Automatizando pruebas y validaciones de código antes de la integración, asegurando que los cambios no introduzcan errores y optimizando el tiempo de despliegue.
+
+Conclusión:
+Esta actividad nos permitió aplicar de manera práctica el uso de Git y GitHub en un proyecto colaborativo, enfrentando situaciones reales como la resolución de conflictos y la gestión de ramas. El trabajo en equipo y la comunicación constante fueron esenciales para cumplir con los objetivos. Consideramos que dominar estas herramientas es clave para cualquier desarrollo de software moderno, ya que facilitan la organización, la integración de cambios y la calidad final del producto.
